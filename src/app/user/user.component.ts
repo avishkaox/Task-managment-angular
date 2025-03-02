@@ -16,4 +16,12 @@ export class UserComponent {
 
   selectedUser = DUMMY_USERS[randomIndexNumber()];
 
+  get imageUrl(){
+    return 'users/' + this.selectedUser.avatar;
+  }
+
+  onSelectedUser(){
+    console.log('User selected');
+  }
+
 }
